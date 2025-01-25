@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <h3>event handling</h3>
+
+    <!-- <script src="../app.js"></script> -->
+
+    <script>
+        var socket = io();
+        socket.on('message', function (data) {
+            document.write(data)
+        });
+    </script>
+
+   
+</body>
+</html>
