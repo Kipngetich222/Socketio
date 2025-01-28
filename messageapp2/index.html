@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>messaging app</title>
+    <title>chat app</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
 </head>
 <body>
     <div class="container">
@@ -22,7 +23,8 @@
 
     <script src="./index.js"></script>
     <script>
-        let socket = io();
+        const socket = io('http://localhost:5000');
+        // let socket = io();
 
         let form = document.getElementById('form');
         let myname = document.getElementById('myname');
